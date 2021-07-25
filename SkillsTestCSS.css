@@ -46,6 +46,14 @@
     display: none;
 }
 
+#wrongName {
+    color: rgb(252, 109, 109);
+    font-style: italic;
+    font-size: smaller;
+    padding-left: 2px;
+    display: none;
+}
+
 .newdiv {
     width: 100%;
     max-width: 500px;

@@ -9,10 +9,11 @@ function submitButton() {
     // IF ELSE STATEMENTS --- displaying text and icons
 
     let outputText;
-    if (nameInput.length == 0) {                                                        // NAME WRONG
+    if (nameInput.length == 0 || (!nameInput.trim())) {                                 // NAME WRONG
         outputText = "Error: Please check all the details before submitting.";
         document.getElementById("nameTimes").style.display = "inline";
         document.getElementById("nameCheck").style.display = "none";
+        document.getElementById("wrongName").style.display = "block";
 
         if (contactNumberInput.length != 11) {                                          // name wrong, number wrong 
             document.getElementById("numberTimes").style.display = "inline";
@@ -46,12 +47,14 @@ function submitButton() {
     else if (nameInput.length != 0) {                                                   // NAME CORRECT
         document.getElementById("nameTimes").style.display = "none";
         document.getElementById("nameCheck").style.display = "inline";
+        document.getElementById("wrongName").style.display = "none";
 
         if (contactNumberInput.length != 11) {                                          // name correct, number wrong 
             outputText = "Error: Please check all the details before submitting.";
             document.getElementById("numberTimes").style.display = "inline";
             document.getElementById("numberCheck").style.display = "none";
             document.getElementById("wrongNumber").style.display = "block";
+
         }
 
         else if (contactNumberInput.length == 11) {                                     // name correct, number correct                                                         
@@ -62,7 +65,7 @@ function submitButton() {
                 document.getElementById("numberTimes").style.display = "inline";
                 document.getElementById("wrongNumber").style.display = "inline";
             }
-            
+
             if (!(contactNumberInput.startsWith("09"))) {                               // must start with 09
                 outputText = "Error: Please check all the details before submitting.";
                 document.getElementById("numberCheck").style.display = "none";
@@ -75,6 +78,7 @@ function submitButton() {
                 document.getElementById("numberCheck").style.display = "inline";
                 document.getElementById("numberTimes").style.display = "none";
                 document.getElementById("wrongNumber").style.display = "none";
+
             }
         }
     }
@@ -87,6 +91,7 @@ function submitButton() {
         document.getElementById("OutputSuccess").style.display = "block";
         document.getElementById("OutputFail").style.display = "none";
         document.getElementById("OutputGood").innerHTML = outputText;
+        
     }
 
 
