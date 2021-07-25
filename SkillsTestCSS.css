@@ -1,0 +1,110 @@
+.bodyLight {
+    background-color: #f8f9fa;
+}
+
+.bodyDark {
+    background-color: #1e2e3d;
+}
+
+.bg-light {
+    background-color: white !important;
+    filter: drop-shadow(0.5px 0.5px 3px darkgray);
+}
+
+.bg-dark {
+    color: #bbbbbb !important;
+    background-color: #2a3849 !important;
+    filter: drop-shadow(0.5px 0.5px 3px #15202b);
+}
+
+.header-light {
+    color: black;
+}
+
+.header-dark {
+    color: #f7f3f7;
+}
+
+.fa-times-circle {
+    color: red;
+}
+
+.fa-check-circle {
+    color: green;
+}
+
+::placeholder {
+    color: #d1d1d1 !important;
+    font-style: italic;
+}
+
+#wrongNumber {
+    color: rgb(252, 109, 109);
+    font-style: italic;
+    font-size: smaller;
+    padding-left: 2px;
+    display: none;
+}
+
+.newdiv {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+.alertdiv {
+    width: 100%;
+    max-width: 500px;
+    padding: 5px 15px;
+    margin: 0 auto 5px;
+}
+
+.btn-primary {
+    background-color: #5051f9;
+    border-radius: 50px;
+    border-color: #5051f9;
+}
+
+.btn-primary:hover {
+    background-color: #4242d8;
+    border-color: #3d3dc9;
+}
+
+.panel {
+    border-radius: 10px;
+}
+
+#picture {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+}
+
+#attribution {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 5px;
+    margin: 0;
+}
+
+#link-attribution {
+    color: rgb(190, 190, 190);
+    font-size: smaller;
+}
+
+a:hover#link-attribution {
+    color: rgb(167, 167, 167);
+    text-decoration: none;
+}
+
+#contact-link {
+    color: #5051f9;
+}
+
+a:hover#contact-link {
+    color: #3d3dc9;
+    text-decoration: none;
+}

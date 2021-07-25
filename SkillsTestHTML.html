@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Skills Test Assessment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="SkillsTestCSS.css">
+    <script src="SkillsTestJS.js">
+    </script>
+
+</head>
+
+<body class="bodyLight" id="toggleBG" style="position:relative;">
+    <div>
+        <h1 style="text-align:center; padding:15px 0 10px; margin:0;" id="toggleH1"> We'd love to get in touch with you!
+        </h1>
+        <p style="text-align:center;" id="toggleP1"> Please leave your contact details in the form below.</p>
+    </div>
+    <div class="newdiv">
+
+
+        <div class="panel bg-light" id="togglePanel">
+            <div class="panel-body p-3">
+                <form action="#">
+                    <h3 class="header-light" id="toggleH3" style="text-align:center;" for="name">
+                        Contact Details
+                    </h3>
+
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label class="control-label-name" for="name">
+                            Name:
+                        </label>
+                        <span class="iconClass" id="nameTimes" style="display:none;">
+                            <i class="fas fa-times-circle"></i>
+                        </span>
+                        <span class="iconClass" id="nameCheck" style="display:none;">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                        <input class="form-control" type="text" id="name" name="name"
+                            placeholder="e.g. John dela Cruz" />
+
+                    </div>
+
+                    <!-- Contact Number -->
+                    <div class="form-group">
+                        <label class="control-label" for="contactnumber">
+                            Contact Number:
+                        </label>
+                        <span class="iconClass" id="numberTimes" style="display:none;">
+                            <i class="fas fa-times-circle"></i>
+                        </span>
+                        <span class="iconClass" id="numberCheck" style="display:none;">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                        <input class="form-control" type="text" id="contactnumber" name="contactnumber"
+                            placeholder="e.g. 09123456789" />
+                        <p id="wrongNumber"> Please input a 11 digit phone number starting with '09' (no spaces).</p>
+                    </div>
+
+                    <!-- Choose Theme -->
+                    <div class="form-group">
+                        <label class="control-label mr-3">
+                            Choose Theme:
+                        </label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="modeOptions" id="light" value="Light"
+                                onclick="toggleLight()">
+                            <label class="form-check-label" for="light">Light Mode</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="modeOptions" id="dark" value="Dark"
+                                onclick="toggleDark()">
+                            <label class="form-check-label" for="dark">Dark Mode</label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="button" class="btn btn-primary btn-block" id="html"
+                        onclick="submitButton()">Submit</button>
+
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+
+    <div class="alert alert-danger alertdiv" id="OutputFail" style="display:none; font-style: italic;">
+        <p id="OutputError" style="margin:0px;"></p>
+    </div>
+
+    <div class="alert alert-success alertdiv" id="OutputSuccess" style="display:none; font-style: italic;">
+        <p id="OutputGood" style="margin:0px;"></p>
+    </div>
+
+    <div>
+        <p style="text-align:center;" id="toggleP2">Need help? <a id="contact-link" href="">Contact us here.</a> </p>
+    </div>
+    <div id="picture">
+        <img src="https://media.discordapp.net/attachments/827041078686777374/868873083291861052/picture.png"
+            width="300">
+    </div>
+    <p id="attribution"><a id="link-attribution" href="https://storyset.com/work">Work illustrations by Storyset</a></p>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
