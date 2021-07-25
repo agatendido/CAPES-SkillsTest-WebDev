@@ -28,6 +28,12 @@ function submitButton() {
                 document.getElementById("wrongNumber").style.display = "inline";
             }
 
+            if (!(contactNumberInput.startsWith("09"))) {                               // must start with 09
+                outputText = "Error: Please check all the details before submitting.";
+                document.getElementById("numberCheck").style.display = "none";
+                document.getElementById("numberTimes").style.display = "inline";
+                document.getElementById("wrongNumber").style.display = "inline";
+            }
             else {
                 document.getElementById("numberCheck").style.display = "inline";
                 document.getElementById("numberTimes").style.display = "none";
@@ -56,6 +62,7 @@ function submitButton() {
                 document.getElementById("numberTimes").style.display = "inline";
                 document.getElementById("wrongNumber").style.display = "inline";
             }
+            
             if (!(contactNumberInput.startsWith("09"))) {                               // must start with 09
                 outputText = "Error: Please check all the details before submitting.";
                 document.getElementById("numberCheck").style.display = "none";
